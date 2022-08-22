@@ -1,6 +1,9 @@
 package com.study.board.entity;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 import org.hibernate.Hibernate;
 
 import javax.persistence.Entity;
@@ -23,6 +26,10 @@ public class Board {
     private String title;
 
     private String content;
+
+    private String filename;
+
+    private String filepath;
 
     @Override
     public boolean equals(Object o) {
